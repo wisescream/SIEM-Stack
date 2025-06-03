@@ -48,7 +48,9 @@ env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/in
 - [Accès à distance et outils](#acces-a-distance-et-outils)
   - [SSH](#ssh)
   - [Page d'accueil SIEM Stack](#page-daccueil-siem-stack)
-  - [Tableau de bord Kibana](#tableau-de-bord-kibana)
+  - [Tableau de bord K
+  ibana](#tableau-de-bord-K
+  ibana)
   - [Carte d'attaque](#carte-dattaque)
   - [Cyberchef](#cyberchef)
   - [Elasticvue](#elasticvue)
@@ -71,7 +73,9 @@ env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/in
   - [Afficher les conteneurs](#afficher-les-conteneurs)
   - [Blackhole](#blackhole)
   - [Ajouter des utilisateurs à Nginx (WebUI SIEM Stack)](#ajouter-des-utilisateurs-a-nginx-webui-siem-stack)
-  - [Importer et exporter des objets Kibana](#importer-et-exporter-des-objets-kibana)
+  - [Importer et exporter des objets K
+  ibana](#importer-et-exporter-des-objets-K
+  ibana)
     - [Exporter](#exporter)
     - [Importer](#importer)
 - [Dépannage](#depannage)
@@ -88,10 +92,65 @@ env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/in
 <!-- TOC -->
 <br><br>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 28d78df3c12e7ea50113683e8b5a7e7eb23fda2a
 # Concept technique
 Les principaux composants de SIEM Stack ont été déplacés dans l'image Docker `tpotinit`, permettant désormais à SIEM Stack de supporter plusieurs distributions Linux, voire macOS et Windows (bien que limités aux fonctionnalités de Docker Desktop). SIEM Stack utilise [docker](https://www.docker.com/) et [docker compose](https://docs.docker.com/compose/) pour atteindre son objectif de faire fonctionner simultanément autant de honeypots et d'outils que possible, utilisant ainsi au maximum le matériel de l'hôte.
 <br><br>
 
+<<<<<<< HEAD
+=======
+## Outils
+- SIEM Stack propose des images Docker pour les honeypots suivants :<br>
+[adbhoney](https://github.com/huuck/ADBHoney),
+[beelzebub](https://github.com/mariocandela/beelzebub),
+[ciscoasa](https://github.com/Cymmetria/ciscoasa_honeypot),
+[citrixhoneypot](https://github.com/MalwareTech/CitrixHoneypot),
+[conpot](http://conpot.org/),
+[cowrie](https://github.com/cowrie/cowrie),
+[ddospot](https://github.com/aelth/ddospot),
+[dicompot](https://github.com/nsmfoo/dicompot),
+[dionaea](https://github.com/DinoTools/dionaea),
+[elasticpot](https://gitlab.com/bontchev/elasticpot),
+[endlessh](https://github.com/skeeto/endlessh),
+[galah](https://github.com/0x4D31/galah),
+[go-pot](https://github.com/ryanolee/go-pot),
+[glutton](https://github.com/mushorg/glutton),
+[h0neytr4p](https://github.com/pbssubhash/h0neytr4p),
+[hellpot](https://github.com/yunginnanet/HellPot),
+[heralding](https://github.com/johnnykv/heralding),
+[honeyaml](https://github.com/mmta/honeyaml),
+[honeypots](https://github.com/qeeqbox/honeypots),
+[honeytrap](https://github.com/armedpot/honeytrap/),
+[ipphoney](https://gitlab.com/bontchev/ipphoney),
+[log4pot](https://github.com/thomaspatzke/Log4Pot),
+[mailoney](https://github.com/awhitehatter/mailoney),
+[medpot](https://github.com/schmalle/medpot),
+[miniprint](https://github.com/sa7mon/miniprint),
+[redishoneypot](https://github.com/cypwnpwnsocute/RedisHoneyPot),
+[sentrypeer](https://github.com/SentryPeer/SentryPeer),
+[snare](http://mushmush.org/),
+[tanner](http://mushmush.org/),
+[wordpot](https://github.com/gbrindisi/wordpot)
+
+Ainsi que les outils suivants :
+* [Autoheal](https://github.com/willfarrell/docker-autoheal) : redémarre automatiquement les conteneurs dont les vérifications de santé échouent.
+* [Cyberchef](https://gchq.github.io/CyberChef/) : application web pour le chiffrement, l'encodage, la compression et l'analyse de données.
+* [Elastic Stack](https://www.elastic.co/videos) : visualise magnifiquement tous les événements capturés par SIEM Stack.
+* [Elasticvue](https://github.com/cars10/elasticvue/) : interface web pour naviguer et interagir avec un cluster Elasticsearch.
+* [Fatt](https://github.com/0x4D31/fatt) : script basé sur pyshark pour extraire des métadonnées réseau et des empreintes à partir de fichiers pcap et du trafic réseau en direct.
+* [SIEM Stack-Attack-Map](https://github.com/t3chn0m4g3/SIEM Stack-attack-map) : carte d'attaque animée pour SIEM Stack.
+* [P0f](https://lcamtuf.coredump.cx/p0f3/) : outil de fingerprinting passif du trafic réseau.
+* [Spiderfoot](https://github.com/smicallef/spiderfoot) : outil d'automatisation de renseignement open source.
+* [Suricata](https://suricata.io/) : moteur de surveillance de la sécurité réseau.
+
+... pour vous offrir la meilleure expérience prête à l'emploi possible et un système multi-honeypot facile à utiliser.
+<br><br>
+
+
+>>>>>>> 28d78df3c12e7ea50113683e8b5a7e7eb23fda2a
 ## Architecture technique
 ![Architecture](doc/architecture.png)
 
@@ -107,9 +166,11 @@ SIEM Stack propose un certain nombre de services, répartis en cinq groupes prin
 2. Elastic Stack
     * Elasticsearch pour stocker les événements.
     * Logstash pour ingérer, recevoir et envoyer des événements à Elasticsearch.
-    * Kibana pour afficher les événements sur de magnifiques tableaux de bord.
+    * K
+    ibana pour afficher les événements sur de magnifiques tableaux de bord.
 3. Outils
-    * NGINX fournit un accès distant sécurisé (reverse proxy) à Kibana, CyberChef, Elasticvue, GeoIP AttackMap, Spiderfoot et permet aux capteurs SIEM Stack de transmettre en toute sécurité les données d'événements à la ruche SIEM Stack.
+    * NGINX fournit un accès distant sécurisé (reverse proxy) à K
+    ibana, CyberChef, Elasticvue, GeoIP AttackMap, Spiderfoot et permet aux capteurs SIEM Stack de transmettre en toute sécurité les données d'événements à la ruche SIEM Stack.
     * CyberChef : application web pour le chiffrement, l'encodage, la compression et l'analyse de données.
     * Elasticvue : interface web pour naviguer et interagir avec un cluster Elasticsearch.
     * SIEM Stack Attack Map : carte d'attaque animée pour SIEM Stack.
@@ -179,12 +240,18 @@ SIEM Stack a été testé et fonctionne sur ...
 * Telekom OTC en utilisant la méthode post-install
 ... d'autres peuvent fonctionner, mais n'ont pas été testés.
 
+<<<<<<< HEAD
 Certains utilisateurs signalent des installations fonctionnelles sur d'autres clouds et hébergeurs, par exemple Azure et GCP. Les exigences matérielles peuvent être différentes. En cas de doute, consultez les [issues](https://github.com/telekom-security/tpotce/issues) et [discussions](https://github.com/telekom-security/tpotce/discussions) et effectuez quelques tests fonctionnels. Depuis SIEM Stack 24.04.0, nous avons supprimé les paramètres connus pour interférer avec les installations cloud.
 <br><br>
 
 ## Ports requis
 En plus des ports généralement nécessaires à l'OS (DHCP, DNS, etc.), SIEM Stack nécessitera les ports suivants pour les connexions entrantes/sortantes. Consultez l'[architecture SIEM Stack](#technical-architecture) pour une représentation visuelle. Certains ports apparaîtront en double, ce qui est normal car utilisés dans différentes éditions.
 
+=======
+## Ports requis
+En plus des ports généralement nécessaires à l'OS (DHCP, DNS, etc.), SIEM Stack nécessitera les ports suivants pour les connexions entrantes/sortantes. Consultez l'[architecture SIEM Stack](#technical-architecture) pour une représentation visuelle. Certains ports apparaîtront en double, ce qui est normal car utilisés dans différentes éditions.
+
+>>>>>>> 28d78df3c12e7ea50113683e8b5a7e7eb23fda2a
 | Port                                                                                                                                  | Protocole | Direction | Description                                                                                         |
 | :------------------------------------------------------------------------------------------------------------------------------------ | :------- | :-------- | :-------------------------------------------------------------------------------------------------- |
 | 80, 443                                                                                                                               | tcp      | sortant  | Gestion SIEM Stack : installation, mises à jour, logs (OS, GitHub, DockerHub, Sicherheitstacho, etc.)        |
@@ -199,35 +266,44 @@ En plus des ports généralement nécessaires à l'OS (DHCP, DNS, etc.), SIEM St
 | 443                                                                                                                                   | tcp      | entrant  | Honeypot : CitrixHoneypot                                                                            |
 | 80, 102, 502, 1025, 2404, 10001, 44818, 47808, 50100                                                                                  | tcp      | entrant  | Honeypot : Conpot                                                                                    |
 | 161, 623                                                                                                                              | udp      | entrant  | Honeypot : Conpot                                                                                    |
+<<<<<<< HEAD
 
-## Tableau de bord Kibana
-Sur la page d'accueil SIEM Stack, cliquez sur « Kibana » pour accéder aux tableaux de bord. Vous pouvez sélectionner parmi une grande variété de dashboards et de visualisations adaptés aux honeypots supportés par SIEM Stack.
+## Tableau de bord K
+ibana
+Sur la page d'accueil SIEM Stack, cliquez sur « K
+ibana » pour accéder aux tableaux de bord. Vous pouvez sélectionner parmi une grande variété de dashboards et de visualisations adaptés aux honeypots supportés par SIEM Stack.
 
-![Kibana Dashboard 1](doc/kibana_a.png)
-![Kibana Dashboard 2](doc/kibana_b.png)
-![Kibana Dashboard 3](doc/kibana_c.png)
+![K
+ibana Dashboard 1](doc/K
+ibana_a.png)
+![K
+ibana Dashboard 2](doc/K
+ibana_b.png)
+![K
+ibana Dashboard 3](doc/K
+ibana_c.png)
 <br><br>
 
 ## Carte d'attaque
 Sur la page d'accueil SIEM Stack, cliquez sur « Carte d'attaque » pour y accéder. La carte utilise les websockets, il peut être nécessaire de ressaisir les identifiants `<WEB_USER>`.
 
-![Attack Map](doc/attackmap.png)
+![Attack Map](doc/Attackmap.png)
 <br><br>
 
 ## Cyberchef
 Sur la page d'accueil SIEM Stack, cliquez sur « Cyberchef » pour y accéder.
 
-![Cyberchef](doc/cyberchef.png)
+![Cyberchef](doc/Cyberchef.png)
 <br><br>
 
 ## Elasticvue
 Sur la page d'accueil SIEM Stack, cliquez sur « Elasticvue » pour y accéder.
 
-![Elasticvue](doc/elasticvue.png)
+![Elasticvue](doc/Elasticvue.png)
 <br><br>
 
 ## Spiderfoot
-Sur la page d'accueil SIEM Stack, cliquez sur « Spiderfoot » pour y accéder.
+Sur la page d'accueil SIEM Stack, cliquez s²ur « Spiderfoot » pour y accéder.
 
-![Spiderfoot](doc/spiderfoot.png)
+![Spiderfoot](doc/Spiderfoot.png)
 <br><br>

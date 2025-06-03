@@ -28,7 +28,7 @@ services:
 
 
 
-  SIEM-Stack:
+  SIEM-Stack-init:
     container_name: SIEM-Stack
     env_file:
       - .env
