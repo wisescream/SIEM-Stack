@@ -70,7 +70,6 @@ env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/in
   - [Types d'installation](#types-dinstallation)
     - [Standard / Hive](#standard--hive)
     - [Distribué](#distribue)
-  - [Désinstaller SIEM Stack](#desinstaller-siem-stack)
 - [Premier démarrage](#premier-demarrage)
   - [Premier démarrage autonome](#premier-demarrage-autonome)
   - [Déploiement distribué](#deploiement-distribue)
@@ -82,9 +81,7 @@ env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/in
 - [Accès à distance et outils](#acces-a-distance-et-outils)
   - [SSH](#ssh)
   - [Page d'accueil SIEM Stack](#page-daccueil-siem-stack)
-  - [Tableau de bord K
-  ibana](#tableau-de-bord-K
-  ibana)
+  - [Tableau de bord Kibana](#tableau-de-bord-Kibana)
   - [Carte d'attaque](#carte-dattaque)
   - [Cyberchef](#cyberchef)
   - [Elasticvue](#elasticvue)
@@ -92,13 +89,7 @@ env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/in
 - [Configuration](#configuration)
   - [Fichier de configuration SIEM Stack](#fichier-de-configuration-siem-stack)
   - [Personnaliser les honeypots et services SIEM Stack](#personnaliser-les-honeypots-et-services-siem-stack)
-- [Maintenance](#maintenance)
-  - [Mises à jour générales](#mises-a-jour-generales)
-  - [Script de mise à jour](#script-de-mise-a-jour)
   - [Redémarrage quotidien](#redemarrage-quotidien)
-  - [Problèmes connus](#problemes-connus)
-    - [Échec du téléchargement des images Docker](#echec-du-telechargement-des-images-docker)
-    - [Échec du réseau SIEM Stack](#echec-du-reseau-siem-stack)
   - [Démarrer SIEM Stack](#demarrer-siem-stack)
   - [Arrêter SIEM Stack](#arreter-siem-stack)
   - [Dossier de données SIEM Stack](#dossier-de-donnees-siem-stack)
@@ -109,18 +100,7 @@ env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/in
   - [Ajouter des utilisateurs à Nginx (WebUI SIEM Stack)](#ajouter-des-utilisateurs-a-nginx-webui-siem-stack)
     - [Exporter](#exporter)
     - [Importer](#importer)
-- [Dépannage](#depannage)
-  - [Logs](#logs)
-  - [RAM et stockage](#ram-et-stockage)
-- [Contact](#contact)
-  - [Problèmes](#problemes)
-  - [Discussions](#discussions)
-- [Licences](#licences)
-- [Crédits](#credits)
-  - [Les développeurs et communautés de développement de](#les-developpeurs-et-communautes-de-developpement-de)
-  - [**Les entreprises et organisations suivantes**](#les-entreprises-et-organisations-suivantes)
-  - [**Et bien sûr ***VOUS*** pour avoir rejoint la communauté !**](#et-bien-sur-vous-pour-avoir-rejoint-la-communaute)
-<!-- TOC -->
+
 <br><br>
 
 
