@@ -73,9 +73,6 @@ env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/in
   - [Afficher les conteneurs](#afficher-les-conteneurs)
   - [Blackhole](#blackhole)
   - [Ajouter des utilisateurs à Nginx (WebUI SIEM Stack)](#ajouter-des-utilisateurs-a-nginx-webui-siem-stack)
-  - [Importer et exporter des objets K
-  ibana](#importer-et-exporter-des-objets-K
-  ibana)
     - [Exporter](#exporter)
     - [Importer](#importer)
 - [Dépannage](#depannage)
@@ -92,10 +89,7 @@ env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/in
 <!-- TOC -->
 <br><br>
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 28d78df3c12e7ea50113683e8b5a7e7eb23fda2a
 # Concept technique
 Les principaux composants de SIEM Stack ont été déplacés dans l'image Docker `tpotinit`, permettant désormais à SIEM Stack de supporter plusieurs distributions Linux, voire macOS et Windows (bien que limités aux fonctionnalités de Docker Desktop). SIEM Stack utilise [docker](https://www.docker.com/) et [docker compose](https://docs.docker.com/compose/) pour atteindre son objectif de faire fonctionner simultanément autant de honeypots et d'outils que possible, utilisant ainsi au maximum le matériel de l'hôte.
 <br><br>
@@ -150,7 +144,6 @@ Ainsi que les outils suivants :
 <br><br>
 
 
->>>>>>> 28d78df3c12e7ea50113683e8b5a7e7eb23fda2a
 ## Architecture technique
 ![Architecture](doc/architecture.png)
 
@@ -251,7 +244,6 @@ En plus des ports généralement nécessaires à l'OS (DHCP, DNS, etc.), SIEM St
 ## Ports requis
 En plus des ports généralement nécessaires à l'OS (DHCP, DNS, etc.), SIEM Stack nécessitera les ports suivants pour les connexions entrantes/sortantes. Consultez l'[architecture SIEM Stack](#technical-architecture) pour une représentation visuelle. Certains ports apparaîtront en double, ce qui est normal car utilisés dans différentes éditions.
 
->>>>>>> 28d78df3c12e7ea50113683e8b5a7e7eb23fda2a
 | Port                                                                                                                                  | Protocole | Direction | Description                                                                                         |
 | :------------------------------------------------------------------------------------------------------------------------------------ | :------- | :-------- | :-------------------------------------------------------------------------------------------------- |
 | 80, 443                                                                                                                               | tcp      | sortant  | Gestion SIEM Stack : installation, mises à jour, logs (OS, GitHub, DockerHub, Sicherheitstacho, etc.)        |
