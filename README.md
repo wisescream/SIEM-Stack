@@ -294,15 +294,9 @@ ibana
 Sur la page d'accueil SIEM Stack, cliquez sur « K
 ibana » pour accéder aux tableaux de bord. Vous pouvez sélectionner parmi une grande variété de dashboards et de visualisations adaptés aux honeypots supportés par SIEM Stack.
 
-![K
-ibana Dashboard 1](doc/K
-ibana_a.png)
-![K
-ibana Dashboard 2](doc/K
-ibana_b.png)
-![K
-ibana Dashboard 3](doc/K
-ibana_c.png)
+![Kibana Dashboard 1](doc/Kibana_a.png)
+![Kibana Dashboard 2](doc/Kibana_b.png)
+![Kibana Dashboard 3](doc/Kibana_c.png)
 <br><br>
 
 ## Carte d'attaque
