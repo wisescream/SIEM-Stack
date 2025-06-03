@@ -1,4 +1,4 @@
-# SIEM Stack - La plateforme multi-honeypot tout-en-un
+# SIEM Stack 
 
 ![SIEM Stack]
 SIEM Stack est la plateforme honeypot tout-en-un, optionnellement distribuée, multi-architecture (amd64, arm64), prenant en charge plus de 20 honeypots et d'innombrables options de visualisation grâce à Elastic Stack, des cartes d'attaques animées en temps réel et de nombreux outils de sécurité pour améliorer l'expérience de déception.
