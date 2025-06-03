@@ -1,4 +1,4 @@
-#Avant toute configuration ou utilisation, commencez par cloner ce dépôt sur votre machine
+# Avant toute configuration ou utilisation commencez par cloner ce dépôt sur votre machine
 ''
 (https://github.com/socfortress/OSSIEM.git
 ''
