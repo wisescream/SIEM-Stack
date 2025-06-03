@@ -127,7 +127,6 @@ env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/in
 Les principaux composants de SIEM Stack ont été déplacés dans l'image Docker `tpotinit`, permettant désormais à SIEM Stack de supporter plusieurs distributions Linux, voire macOS et Windows (bien que limités aux fonctionnalités de Docker Desktop). SIEM Stack utilise [docker](https://www.docker.com/) et [docker compose](https://docs.docker.com/compose/) pour atteindre son objectif de faire fonctionner simultanément autant de honeypots et d'outils que possible, utilisant ainsi au maximum le matériel de l'hôte.
 <br><br>
 
-<<<<<<< HEAD
 =======
 ## Outils
 - SIEM Stack propose des images Docker pour les honeypots suivants :<br>
@@ -178,7 +177,7 @@ Ainsi que les outils suivants :
 
 
 ## Architecture technique
-![Architecture](doc/architecture.png)
+![Architecture](doc/Architecture.png)
 
 Le code source et les fichiers de configuration sont entièrement stockés dans le dépôt GitHub de SIEM Stack. Les images Docker sont construites et préconfigurées pour l'environnement SIEM Stack.
 
@@ -266,9 +265,6 @@ SIEM Stack a été testé et fonctionne sur ...
 * Telekom OTC en utilisant la méthode post-install
 ... d'autres peuvent fonctionner, mais n'ont pas été testés.
 
-<<<<<<< HEAD
-Certains utilisateurs signalent des installations fonctionnelles sur d'autres clouds et hébergeurs, par exemple Azure et GCP. Les exigences matérielles peuvent être différentes. En cas de doute, consultez les [issues](https://github.com/telekom-security/tpotce/issues) et [discussions](https://github.com/telekom-security/tpotce/discussions) et effectuez quelques tests fonctionnels. Depuis SIEM Stack 24.04.0, nous avons supprimé les paramètres connus pour interférer avec les installations cloud.
-<br><br>
 
 ## Ports requis
 En plus des ports généralement nécessaires à l'OS (DHCP, DNS, etc.), SIEM Stack nécessitera les ports suivants pour les connexions entrantes/sortantes. Consultez l'[architecture SIEM Stack](#technical-architecture) pour une représentation visuelle. Certains ports apparaîtront en double, ce qui est normal car utilisés dans différentes éditions.
