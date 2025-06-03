@@ -1,4 +1,26 @@
-# SIEM Stack 
+#Avant toute configuration ou utilisation, commencez par cloner ce dépôt sur votre machine
+''
+(https://github.com/socfortress/OSSIEM.git
+''
+## OSSIEM (Open Source SIEM)
+
+ (Open Source Security Information and Event Management) est une solution SIEM open source développée à l'origine par AlienVault. Elle permet de collecter, corréler et analyser les événements de sécurité provenant de différentes sources (logs, IDS, honeypots, etc.) pour détecter les menaces et incidents de sécurité.
+
+### Fonctionnalités principales :
+- Collecte centralisée des logs et événements de sécurité
+- Corrélation d'événements pour la détection d'incidents
+- Tableaux de bord et rapports de sécurité
+- Intégration avec de nombreux outils open source (Snort, Suricata, Nagios, etc.)
+
+### Différences avec la stack Elastic/T-Pot :
+- **OSSIEM** est une solution SIEM tout-en-un, avec son propre moteur de corrélation et ses outils intégrés.
+- **T-Pot/SIEM Stack** s'appuie principalement sur Elastic Stack (Elasticsearch, Logstash, Kibana) pour la collecte, le stockage et la visualisation des événements, et intègre de nombreux honeypots.
+- OSSIM peut être utilisé en complément ou en alternative à Elastic Stack selon les besoins de l'organisation.
+
+
+
+
+SIEM Stack 
 
 ![SIEM Stack]
 SIEM Stack est la plateforme honeypot tout-en-un, optionnellement distribuée, multi-architecture (amd64, arm64), prenant en charge plus de 20 honeypots et d'innombrables options de visualisation grâce à Elastic Stack, des cartes d'attaques animées en temps réel et de nombreux outils de sécurité pour améliorer l'expérience de déception.
