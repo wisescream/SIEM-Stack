@@ -11,7 +11,8 @@
 ![Screenshot 2025-05-29 055623](https://github.com/user-attachments/assets/b0f2eb01-28a1-4557-b6b4-26a89f54beae)
 
 ''
-(https://github.com/socfortress/OSSIEM.git
+https://github.com/socfortress/OSSIEM.git
+https://github.com/wisescream/SIEM-Stack.git
 ''
 ## OSSIEM (Open Source SIEM)
 
